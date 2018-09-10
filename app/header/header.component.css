@@ -5,7 +5,6 @@
     padding: 4px;
     z-index: 1;
     position: relative;
-    height: 32px;
 }
 /* Board Button/Text Style */
 .board-btn{
@@ -34,7 +33,7 @@
     position: fixed;
     left: 0;
     width: 280px;
-    top: 50px;
+    top: 40px;
     z-index: 10;
 }
 .open{
@@ -47,7 +46,7 @@
     margin: 8px 4px 8px 8px;
 }
 .board-section input {
-    margin: 0 0 6px;
+    margin: 0 0 6px 5px;
     padding: 6px;
     width: 93%;
 }

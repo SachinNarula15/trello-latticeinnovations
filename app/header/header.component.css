@@ -1,0 +1,89 @@
+/* Header Style */
+.header{
+    background: #026aa7;
+    overflow: hidden;
+    padding: 4px;
+    z-index: 1;
+    position: relative;
+    height: 32px;
+}
+/* Board Button/Text Style */
+.board-btn{
+    transition: .1s ease;
+    background: hsla(0,0%,100%,.3);
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    float: left;
+    font-weight: 700;
+    line-height: 32px;
+    min-width: 32px;
+}
+.text{
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/* Board Open Style */
+.board-section{
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,.4);
+    border-radius: 0 3px 3px 0;
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    width: 280px;
+    top: 50px;
+    z-index: 10;
+}
+.open{
+    display: block;
+}
+/* Board open text style */
+.board-text{
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 8px 4px 8px 8px;
+}
+.board-section input {
+    margin: 0 0 6px;
+    padding: 6px;
+    width: 93%;
+}
+input[type=text]:focus {
+    background: #fff;
+    border-color: #298fca;
+    box-shadow: 0 0 2px #298fca;
+}
+
+/* Search bar style */
+.search {
+    float: left;
+    margin: 0 8px 0 0;
+    position: relative;
+    z-index: 1;
+}
+input[type=text].searchbar {
+    background-color: hsla(0,0%,100%,.3);
+    border-radius: 3px;
+    border: none;
+    color: hsla(0,0%,100%,.5);
+    float: left;
+    font-size: 13px;
+    height: 30px;
+    margin: 0;
+    margin-left: 5px;
+    padding-right: 32px;
+    padding-left: 8px;
+    line-height: 19px;
+    transition: width .15s;
+    width: 180px;
+    z-index: 1;
+}
+input[type=text].style{
+    background-color: #fff !important;
+    width: 1381px !important;
+    color: #000;
+    font-weight: 700;
+}

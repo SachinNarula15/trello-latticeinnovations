@@ -96,3 +96,23 @@ ul li {
 ul#myUL1, ul#myUL2{
     list-style-type: none;
 }
+
+/* Note Style */
+.note{
+    background-color: #026aa7;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+.note p{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration-line: underline;
+}
+.note ul li{
+    color: #000;
+    font-size: 18px;
+}

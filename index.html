@@ -13,7 +13,7 @@
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   
-  <!-- Script to toggle board section -->
+  <!-- Script to toggle/add/style -->
   <script>
     $(document).ready(function(){
         $(".board-btn").click(function(){
@@ -26,7 +26,82 @@
             $(".searchbar").toggleClass("style");
         });
     });
+
+    $(document).ready(function(){
+        $(".add-card").click(function(){
+            $(".open-card").addClass("hide");
+        });
+        $(".add-card1").click(function(){
+            $(".open-card1").addClass("hide");
+        });
+        $(".add-card2").click(function(){
+            $(".open-card2").addClass("hide");
+        });
+    });
     
+    $(document).ready(function(){
+        $(".add-card").click(function(){
+            $(".value").css("display", "block");
+        });
+        $(".add-card1").click(function(){
+            $(".value1").css("display", "block");
+        });
+        $(".add-card2").click(function(){
+            $(".value2").css("display", "block");
+        });
+    });
+
+    </script>
+    
+    <!-- Script to add first card -->
+    <script>
+    
+    function newElement() {
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("myInput").value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    if (inputValue === '') {
+    alert("You must write something!");
+    } else {
+    document.getElementById("myUL").appendChild(li);
+    }
+    document.getElementById("myInput").value = "";
+}
+    </script>
+
+    <!-- Script to add second card -->
+    <script>
+    
+    function newElement1() {
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("myInput1").value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    if (inputValue === '') {
+    alert("You must write something!");
+    } else {
+    document.getElementById("myUL1").appendChild(li);
+    }
+    document.getElementById("myInput1").value = "";
+    }
+    </script>
+
+    <!-- Script to add third card -->
+    <script>
+    
+    function newElement2() {
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("myInput2").value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    if (inputValue === '') {
+    alert("You must write something!");
+    } else {
+    document.getElementById("myUL2").appendChild(li);
+    }
+    document.getElementById("myInput2").value = "";
+    }
     </script>
 </head>
 <body>
